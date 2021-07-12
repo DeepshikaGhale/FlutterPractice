@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: HomePage(),
       themeMode: ThemeMode.light,
-      theme: MyTheme.lightTheme,
+      theme: MyTheme.lightTheme(context),
      // debugShowCheckedModeBanner: false, the bandage is shown for the developers to make them in deveopment phase.
       debugShowCheckedModeBanner: false,
-      darkTheme: MyTheme.darkTheme,
+      darkTheme: MyTheme.darkTheme(context),
 
       initialRoute: MyRoutes.homeRoute,
       routes: {
