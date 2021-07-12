@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       // primaryTextTheme: GoogleFonts.latoTextTheme()
       ),
      // debugShowCheckedModeBanner: false, the bandage is shown for the developers to make them in deveopment phase.
+     debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(brightness: Brightness.dark),
 
       routes: {
