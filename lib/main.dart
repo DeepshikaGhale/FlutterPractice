@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
      // debugShowCheckedModeBanner: false, the bandage is shown for the developers to make them in deveopment phase.
       debugShowCheckedModeBanner: false,
       darkTheme: MyTheme.darkTheme(context),
-
       initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => LoginPage(),
