@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final imageUrl =
-        'https://www.sephora.com/productimages/sku/s2421360-main-zoom.jpg?imwidth=315';
+    // final imageUrl =
+    //     'https://www.sephora.com/productimages/sku/s2421360-main-zoom.jpg?imwidth=315';
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
@@ -19,7 +19,7 @@ class MyDrawer extends StatelessWidget {
                 accountName: Text('Username'),
                 accountEmail: Text('someone@gmail.com'),
                 currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage(imageUrl),
+                  backgroundImage: AssetImage('assets/images/login_image.png'),
                 ),
               ),
             ),
