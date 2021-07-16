@@ -1,0 +1,94 @@
+{
+  "products" : [
+    {
+      "id" : 1,
+      "Label": "cleanser",
+      "brand": "Paula's Choice",
+      "name": "Skin Perfecting 2% BHA Liquid Exfoliant",
+      "price": 29.50,
+      "skin_type": "['✔ Normal\\n', '✔ Oily\\n', '✔ Combination\\n', '✔ Dry\\n', '✔ Sensitive\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s2421360-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 2,
+      "Label": "cleanser",
+      "brand": "Youth To The People",
+      "name": "Superfood Antioxidant Cleanser",
+      "price": 36.00,
+      "skin_type": "✔Norma, ✔ Oily, ✔ Combination, ✔ Dry, ✔ Sensitive",
+      "product_image": "https://www.sephora.com/productimages/sku/s1863588-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 3,
+      "Label": "cleanser",
+      "brand": "Glow Recipe",
+      "name": "Watermelon Glow PHA +BHA Pore-Tight Toner",
+      "price": 34.00,
+      "skin_type": "['✔ Normal\\n', '✔ Oily\\n', '✔ Combination\\n', '✔ Dry\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s2348431-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 4,
+      "Label": "cleanser",
+      "brand": "The Ordinary",
+      "name": "Glycolic Acid 7% Toning Solution",
+      "price": 8.70,
+      "skin_type": "['✔ Normal\\n', '✔ Oily\\n', '✔ Combination\\n', '✔ Dry\\n', '✔ Sensitive\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s2031508-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 5,
+      "Label": "cleanser",
+      "brand": "fresh",
+      "name": "Soy Makeup Removing Face Wash",
+      "price": 44.00,
+      "skin_type": "['✔ Full\\n', '✔ Sensitive\\n', '✔ Normal\\n', '✔ Dry\\n', '✔ Combination\\n', '✔ Oily\\n', '✔ Natural\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s2421816-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 6,
+      "Label": "cleanser",
+      "brand": "Farmacy",
+      "name": "Green Clean Makeup Removing Cleansing Balm",
+      "price": 34.00,
+      "skin_type": "['✔ Normal\\n', '✔ Oily\\n', '✔ Combination\\n', '✔ Sensitive\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s1899103-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 7,
+      "Label": "cleanser",
+      "brand": "SK-II",
+      "name": "Facial Treatment Essence (Pitera Essence)",
+      "price": 185.00,
+      "skin_type": "['✔ Normal\\n', '✔ Oily\\n', '✔ Combination\\n', '✔ Dry\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s1850346-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 8,
+      "Label": "cleanser",
+      "brand": "OLEHENRIKSEN",
+      "name": "Glow2OH™ Dark Spot Toner",
+      "price": 29.00,
+      "skin_type": "['✔ Normal\\n', '✔ Oily\\n', '✔ Combination\\n', '✔ Dry\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s2169431-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 9,
+      "Label": "cleanser",
+      "brand": "Dermalogica",
+      "name": "Daily Microfoliant Exfoliator",
+      "price": 59.00,
+      "skin_type": "['✔ Normal\\n', '✔ Oily\\n', '✔ Combination\\n', '✔ Dry\\n', '✔ Sensitive\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s2002087-main-zoom.jpg?imwidth=315"
+    },
+    {
+      "id" : 10,
+      "Label": "cleanser",
+      "brand": "The INKEY List",
+      "name": "Oat Cleansing Balm",
+      "price": 9.99,
+      "skin_type": "['✔ Normal\\n', '✔ Oily\\n', '✔ Combination\\n', '✔ Dry\\n', '✔ Sensitive\\n']",
+      "product_image": "https://www.sephora.com/productimages/sku/s2335636-main-zoom.jpg?imwidth=315"
+    }
+  ]
+}
