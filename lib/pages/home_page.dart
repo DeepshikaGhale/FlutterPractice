@@ -39,11 +39,14 @@ class _HomePageState extends State<HomePage> {
     //the 50 is the amount of item getting displayed over the screen
 
     return Scaffold(
-        backgroundColor: MyTheme.lightgreen,
+        backgroundColor: context.canvasColor,
         floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
-          backgroundColor: Colors.green.shade900,
-          child: Icon(CupertinoIcons.cart),
+          backgroundColor: context.theme.buttonColor,
+          child: Icon(
+            CupertinoIcons.cart,
+            color: Colors.white,
+          ),
         ),
         body: SafeArea(
           child: Container(

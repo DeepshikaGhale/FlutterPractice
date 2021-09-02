@@ -11,10 +11,10 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white),
-      backgroundColor: Colors.white,
+      appBar: AppBar(backgroundColor: context.cardColor),
+      backgroundColor: context.cardColor, //to change color
       bottomNavigationBar: Container(
-        color: MyTheme.lightgreen,
+        color: context.canvasColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -51,7 +51,7 @@ class HomeDetailPage extends StatelessWidget {
               arcType: VxArcType.CONVEY,
               edge: VxEdge.TOP,
               child: Container(
-                color: MyTheme.lightgreen,
+                color: context.canvasColor,
                 width: context.screenWidth,
                 child: Column(
                   children: [

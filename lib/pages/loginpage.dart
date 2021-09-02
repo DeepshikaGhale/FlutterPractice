@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/utils/routes.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -13,28 +14,28 @@ class _LoginPageState extends State<LoginPage> {
 
   moveToHome(BuildContext context) async {
     if (_formkey.currentState!.validate()) {
-    setState(() {
-      change = true;
-    });
-    await Future.delayed(Duration(seconds: 1));
-    await Navigator.pushNamed(context, MyRoutes.homeRoute);
-    setState(() {
-      change = false;
-    });
+      setState(() {
+        change = true;
+      });
+      await Future.delayed(Duration(seconds: 1));
+      await Navigator.pushNamed(context, MyRoutes.homeRoute);
+      setState(() {
+        change = false;
+      });
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: context.canvasColor,
       child: SingleChildScrollView(
         child: Form(
           key: _formkey,
           child: Column(
             children: [
               Image.asset(
-                'assets/images/login_image.png',
+                'assets/images/login.png',
                 fit: BoxFit.cover,
               ),
               Text(
@@ -90,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     Material(
                       // shape: change? BoxShape.circle: BoxShape.rectangle,
-                      color: Colors.deepPurple,
+                      color: context.theme.buttonColor,
                       borderRadius: BorderRadius.circular(change ? 20 : 4),
                       child: InkWell(
                         hoverColor: Colors.red,
@@ -116,13 +117,6 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                     )
-                    // ElevatedButton(
-                    //   child: Text('Login'),
-                    //   style: TextButton.styleFrom(minimumSize: Size(150, 40)),
-                    //   onPressed: () {
-                    //     Navigator.pushNamed(context, MyRoutes.homeRoute);
-                    //   },
-                    // )
                   ],
                 ),
               )

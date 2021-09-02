@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: HomePage(),
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme(context),
      // debugShowCheckedModeBanner: false, the bandage is shown for the developers to make them in deveopment phase.
       debugShowCheckedModeBanner: false,

@@ -33,8 +33,8 @@ class CatalogItem extends StatelessWidget {
       child: Row(
         children: [
           Hero(
-          tag: Key(catalog.id.toString()), 
-          child: CatalogImage(image: catalog.product_image)),
+              tag: Key(catalog.id.toString()),
+              child: CatalogImage(image: catalog.product_image)),
           Expanded(
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,20 +56,21 @@ class CatalogItem extends StatelessWidget {
                       .make(),
                   Container(
                       child: ElevatedButton(
-                          onPressed: () {},
-                          style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(
-                                  Colors.green.shade900),
-                              shape: MaterialStateProperty.all(
-                                StadiumBorder(),
-                              )),
-                          child: "Add to Cart".text.make()))
+                              onPressed: () {},
+                              style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(
+                                      Colors.green.shade900),
+                                  shape: MaterialStateProperty.all(
+                                    StadiumBorder(),
+                                  )),
+                              child: "Add to Cart".text.make())
+                          .w40(context))
                 ],
               )
             ],
           ))
         ],
       ),
-    ).white.rounded.make().py16();
+    ).color(context.cardColor).rounded.make().py16();
   }
 }
