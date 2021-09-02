@@ -33,8 +33,8 @@ class HomeDetailPage extends StatelessWidget {
                             shape: MaterialStateProperty.all(
                               StadiumBorder(),
                             )),
-                        child: "Buy".text.make())
-                    .wh(100, 40))
+                        child: "Add to Cart".text.make())
+                    .wh(120, 40))
           ],
         ).p12(),
       ),
@@ -61,6 +61,9 @@ class HomeDetailPage extends StatelessWidget {
                       style:
                           TextStyle(fontSize: 18, color: Colors.grey.shade700),
                     ),
+                    "Aliquyam diam erat labore ipsum erat est lorem, magna sit ipsum voluptua erat gubergren sed lorem elitr, vero lorem elitr.Aliquyam diam erat labore ipsum erat est lorem, magna sit ipsum voluptua erat gubergren sed lorem elitr, vero lorem elitr."
+                        .text
+                        .make()
                   ],
                 ).p32(),
               ),
