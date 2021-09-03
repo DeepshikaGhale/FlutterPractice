@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   @override
-  //to give the data to the build method.
+  //to give the data to the build method. 
   void initState() {
     super.initState();
     loadData();
