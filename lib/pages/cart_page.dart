@@ -27,17 +27,24 @@ class _CartTotal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final CartModel _cart = (VxState.store as MyStore).cartModel;
-    
+
     return SizedBox(
       height: 200,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+      child: ButtonBar(
+        alignment: MainAxisAlignment.spaceBetween,
         children: [
-          "\$${_cart.totalPrice}"
-              .text
-              .xl2
-              .color(context.theme.accentColor)
-              .make(),
+          VxConsumer(
+            builder: (context, _, status) {
+              print("rebuil");
+              return "\$${_cart.totalPrice}"
+                  .text
+                  .xl2
+                  .color(context.theme.accentColor)
+                  .make();
+            },
+            mutations: {RemoveMutation},
+            notifications: {},
+          ),
           30.widthBox,
           ElevatedButton(
                   onPressed: () {
@@ -51,7 +58,7 @@ class _CartTotal extends StatelessWidget {
                   child: 'Buy'.text.color(Colors.white).make())
               .w32(context)
         ],
-      ),
+      ).p16(),
     );
   }
 }
@@ -59,6 +66,7 @@ class _CartTotal extends StatelessWidget {
 class _CartList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    VxState.watch(context, on: [RemoveMutation]);
     final CartModel _cart = (VxState.store as MyStore).cartModel;
     return _cart.items.isEmpty
         ? "Nothing to show".text.xl2.makeCentered()
@@ -68,9 +76,7 @@ class _CartList extends StatelessWidget {
               leading: Icon(Icons.done),
               trailing: IconButton(
                 icon: Icon(Icons.remove_circle_outline),
-                onPressed: () {
-                  _cart.remove(_cart.items[index]);
-                },
+                onPressed: () => RemoveMutation(item: _cart.items[index]),
               ),
               title: _cart.items[index].name.text.make(),
             ),
