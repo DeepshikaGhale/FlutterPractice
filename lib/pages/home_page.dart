@@ -52,7 +52,8 @@ class _HomePageState extends State<HomePage> {
         floatingActionButton: VxBuilder(
           builder: (context, _, status) => FloatingActionButton(
             onPressed: () {
-              Navigator.pushNamed(context, MyRoutes.cartRoute);
+              //Navigator.pushNamed(context, MyRoutes.cartRoute);
+              context.vxNav.push(Uri.parse(MyRoutes.cartRoute));
             },
             backgroundColor: context.theme.buttonColor,
             child: Icon(

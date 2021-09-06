@@ -18,7 +18,8 @@ class _LoginPageState extends State<LoginPage> {
         change = true;
       });
       await Future.delayed(Duration(seconds: 1));
-      await Navigator.pushNamed(context, MyRoutes.homeRoute);
+      await context.vxNav.push(Uri.parse(MyRoutes.homeRoute));
+      // await Navigator.pushNamed(context, MyRoutes.homeRoute);
       setState(() {
         change = false;
       });
@@ -37,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
               Image.asset(
                 'assets/images/login.png',
                 fit: BoxFit.cover,
-              ),
+              ).p32(),
               Text(
                 'Welcome $name',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
