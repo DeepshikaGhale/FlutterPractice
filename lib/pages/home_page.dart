@@ -27,11 +27,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    // final productsJson =
-    //     await rootBundle.loadString("assets/files/products.json");
+    final productsJson =
+        await rootBundle.loadString("assets/files/products.json");
 
-    final response = await http.get(Uri.parse(url));
-    final productsJson = response.body;
+    // final response = await http.get(Uri.parse(url));
+    // final productsJson = response.body;
 
     final decodeData = jsonDecode(productsJson);
     var productsdata = decodeData['products'];
@@ -51,7 +51,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: context.canvasColor,
         floatingActionButton: VxBuilder(
           builder: (context, _, status) => FloatingActionButton(
-            onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+            onPressed: () {
+              Navigator.pushNamed(context, MyRoutes.cartRoute);
+            },
             backgroundColor: context.theme.buttonColor,
             child: Icon(
               CupertinoIcons.cart,

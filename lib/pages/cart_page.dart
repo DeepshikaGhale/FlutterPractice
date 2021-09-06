@@ -35,7 +35,6 @@ class _CartTotal extends StatelessWidget {
         children: [
           VxConsumer(
             builder: (context, _, status) {
-              print("rebuil");
               return "\$${_cart.totalPrice}"
                   .text
                   .xl2

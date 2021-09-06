@@ -36,26 +36,28 @@ class HomeDetailPage extends StatelessWidget {
                     child: Image.network(catalog.product_image))
                 .h32(context),
             Expanded(
-                child: VxArc(
-              height: 20,
-              arcType: VxArcType.CONVEY,
-              edge: VxEdge.TOP,
-              child: Container(
-                color: context.canvasColor,
-                width: context.screenWidth,
-                child: Column(
-                  children: [
-                    catalog.name.text.xl.bold.make(),
-                    Text(
-                      catalog.Label,
-                      style:
-                          TextStyle(fontSize: 18, color: Colors.grey.shade700),
-                    ),
-                    "Aliquyam diam erat labore ipsum erat est lorem, magna sit ipsum voluptua erat gubergren sed lorem elitr, vero lorem elitr.Aliquyam diam erat labore ipsum erat est lorem, magna sit ipsum voluptua erat gubergren sed lorem elitr, vero lorem elitr."
-                        .text
-                        .make()
-                  ],
-                ).p32(),
+                child: SingleChildScrollView(
+              child: VxArc(
+                height: 20,
+                arcType: VxArcType.CONVEY,
+                edge: VxEdge.TOP,
+                child: Container(
+                  color: context.canvasColor,
+                  width: context.screenWidth,
+                  child: Column(
+                    children: [
+                      catalog.name.text.xl.bold.make(),
+                      Text(
+                        catalog.Label,
+                        style: TextStyle(
+                            fontSize: 18, color: Colors.grey.shade700),
+                      ),
+                      "Aliquyam diam erat labore ipsum erat est lorem, diam erat labore ipsum erat est lorem magna sit Aliquyam diam erat labore ipsum erat est lorem, magna sit ipsum voluptua erat gubergren sed lorem elitr, vero lorem elitr.Aliquyam diam erat labore ipsum erat est lorem, magna sit ipsum voluptua erat gubergren sed lorem elitr, vero lorem elitr."
+                          .text
+                          .make()
+                    ],
+                  ).p32(),
+                ),
               ),
             ))
           ],
