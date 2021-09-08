@@ -1,16 +1,10 @@
-# flutter_application_1
+# Flutter Application
 
 A new Flutter project.
 
-## Getting Started
+## Green Commerce
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project is the UI for ecommerce system developed using flutter framework.
+Additionally, I have used velocityx which makes the UI development much easier.
+Http, API interation is also done to get the products in the json format.
+API is generated through jsonbin.io, it is used for json storage and json hosting service.
